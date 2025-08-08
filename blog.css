@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    max-width: 80vw;
+    padding: 2rem 1rem;
+    margin: 0 auto; 
+    background-color: rgb(255, 255, 255);
+}
+
+.card_title a{
+    text-decoration: none;
+}
+
+.head{
+    margin-bottom: 2.8rem;
+}
+
+.h{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.desc{
+    max-width: 560px;
+    text-align: center;
+    color: grey;
+    margin:0 auto;  /* topbottom,leftright  isse description beech me aagya properly*/
+}
+
+.m{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.cardcont{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(215, 207, 207);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.img{
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+}
+
+.card_image{
+    object-fit: cover; 
+    object-position: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.card_title{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+}
+
+.cardcont:hover .card_image{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+.card{
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(62, 54, 54);
+    line-height: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.card:hover{
+    color: blue;
+}
+
+.card_desc{
+    color: rgb(104, 96, 96);
+    font-size: 1rem;
+}
+
+.cardfoot{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    /* align-items: end; */
+}
+
+.author{
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(43, 41, 41);
+    border-radius: 50%;
+    background-color: rgb(238, 232, 232);
+    margin-right: 1rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column; 
+}
+
+.cardtag{
+    font-size: 0.9rem;
+    border: 1px solid rgb(80, 71, 71);
+    border-radius: 5px;
+    line-height: 1.3rem;
+    padding: 0.5rem 0.5rem;
+    color: grey;
+}
+
+@media (max-width: 500px){
+    .m{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
